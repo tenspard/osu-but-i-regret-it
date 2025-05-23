@@ -23,13 +23,13 @@ namespace osu.Game.Rulesets.Osu.Skinning.Argon
             {
                 new SpriteIcon
                 {
-                    Icon = FontAwesome.Solid.ChevronRight,
+                    Icon = FontAwesome.Solid.ArrowRight,
                     Size = new Vector2(8),
                     Colour = OsuColour.Gray(0.2f),
                 },
                 new SpriteIcon
                 {
-                    Icon = FontAwesome.Solid.ChevronRight,
+                    Icon = FontAwesome.Solid.ArrowRight,
                     Size = new Vector2(8),
                     X = 4,
                 },

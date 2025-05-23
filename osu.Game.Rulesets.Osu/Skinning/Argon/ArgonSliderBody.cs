@@ -10,6 +10,10 @@ namespace osu.Game.Rulesets.Osu.Skinning.Argon
 {
     public partial class ArgonSliderBody : PlaySliderBody
     {
+        public ArgonSliderBody()
+        {
+        }
+
         // Eventually this would be a user setting.
         public float BodyAlpha { get; init; } = 1;
 
@@ -30,10 +34,7 @@ namespace osu.Game.Rulesets.Osu.Skinning.Argon
 
         protected override Default.DrawableSliderPath CreateSliderPath() => new DrawableSliderPath();
 
-        protected override Color4 GetBodyAccentColour(ISkinSource skin, Color4 hitObjectAccentColour)
-        {
-            return base.GetBodyAccentColour(skin, hitObjectAccentColour).Opacity(BodyAlpha);
-        }
+
 
         private partial class DrawableSliderPath : Default.DrawableSliderPath
         {
