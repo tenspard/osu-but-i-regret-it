@@ -68,6 +68,8 @@ namespace osu.Game.Skinning
                 new Color4(232, 235, 0, 255),
                 // Purple
                 new Color4(92, 0, 241, 255),
+                //orange-ish?
+                new Color4(255, 153, 51, 255),
             };
         }
 
@@ -78,7 +80,7 @@ namespace osu.Game.Skinning
             foreach (string lookup in sampleInfo.LookupNames)
             {
                 var sample = Samples?.Get(lookup)
-                             ?? Resources.AudioManager?.Samples.Get(lookup.Replace(@"Gameplay/", @"Gameplay/Argon/"))
+                             ?? Resources.AudioManager?.Samples.Get(lookup.Replace(@"Gameplay/", @"Gameplay/ArgonPro/"))
                              ?? Resources.AudioManager?.Samples.Get(lookup);
 
                 if (sample != null)

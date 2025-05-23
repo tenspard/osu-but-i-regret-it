@@ -14,9 +14,9 @@ namespace osu.Game.Skinning
         public new static SkinInfo CreateInfo() => new SkinInfo
         {
             ID = Skinning.SkinInfo.ARGON_PRO_SKIN,
-            Name = "osu! \"argon\" pro (2022)",
-            Creator = "team osu!",
-            Protected = true,
+            Name = "osu! \"nogra\" pro (2022)",
+            Creator = "team uso!",
+            Protected = false,
             InstantiationInfo = typeof(ArgonProSkin).GetInvariantInstantiationInfo()
         };
 
@@ -25,8 +25,7 @@ namespace osu.Game.Skinning
             foreach (string lookup in sampleInfo.LookupNames)
             {
                 var sample = Samples?.Get(lookup)
-                             ?? Resources.AudioManager?.Samples.Get(lookup.Replace(@"Gameplay/", @"Gameplay/ArgonPro/"))
-                             ?? Resources.AudioManager?.Samples.Get(lookup.Replace(@"Gameplay/", @"Gameplay/Argon/"))
+                             ?? Resources.AudioManager?.Samples.Get(lookup.Replace(@"Gameplay/", @"Gameplay/"))
                              ?? Resources.AudioManager?.Samples.Get(lookup);
 
                 if (sample != null)
